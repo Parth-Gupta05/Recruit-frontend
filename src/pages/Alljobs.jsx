@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ApplyJobpage from "./ApplyJobpage";
 
-const API_BASE = "http://localhost:8050"; // endpoint provided
+const API_BASE = import.meta.env.VITE_API_URL; // endpoint provided
 
 function Alljobs() {
   const [jobs, setJobs] = useState([]);
